@@ -1,0 +1,7 @@
+{{ post.title }}<br>
+{{ post.details }}<br>
+{{ post.updated }}<br>
+
+<a href="{% url 'post:edit' pk=post.pk slug=post.slug %}">Edit post</a>
+<a href="{% url 'post:delete' pk=post.pk slug=post.slug %}">Delete post</a>
+
